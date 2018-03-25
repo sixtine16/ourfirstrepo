@@ -2,15 +2,25 @@ getStylesheet();
 
 function getStylesheet() {
       var currentTime = new Date().getHours();
-      if (0 <= currentTime&&currentTime < 20) {
-      $('#breakfast').show();
+      // var currentTime = 1;
+      console.log("time in hours: " + currentTime)
+
+      if ((0 <= currentTime) && (currentTime < 4)) {
+        $('#hangoverSnack').show();
+        console.log("hangover time")
+
+      } else if ((4 <= currentTime) && (currentTime < 12)) {
+        $('#breakfast').show();
+        console.log("breakfast time")
+
+      } else if (( 12 <= currentTime) && (currentTime < 17)) {
+        $('#lunch').show();
+        console.log("lunch time")
+
+      } else {
+        $('#dinner').show();
+        console.log("dinner time")
       }
-      if (20 <= currentTime&&currentTime < 21) {
-      $('#lunch').show();
-      }
-      if (16 <= currentTime&&currentTime < 24) {
-      console.log("Siamo di sera");
-}
 }
 
 $("#button1").click(function() {

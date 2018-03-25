@@ -1,7 +1,37 @@
-.special-card {
-    opacity: .8;
+.body {
+    background-color: #FFEFA9;
+}
+
+.recipe-card {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.button-recipe {
+  margin-bottom: 30px;
 }
 
 .hidden {
   display: none;
+}
+
+.footer {
+  background-color: #44813E;
+}
+
+.footer-content {
+  margin: 25px;
+}
+
+.container-full {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.footer-green {
+  padding-left: 18px;
+}
+
+.social-media {
+  padding-right: 25px;
 }
