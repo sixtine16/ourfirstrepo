@@ -1,8 +1,8 @@
 getStylesheet();
 
 function getStylesheet() {
-      // var currentTime = new Date().getHours();
-      var currentTime = 7;
+      var currentTime = new Date().getHours();
+      // var currentTime = 7;
       console.log("time in hours: " + currentTime)
 
       if ((0 <= currentTime) && (currentTime < 4)) {
