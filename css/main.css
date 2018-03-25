@@ -60,11 +60,6 @@ a:active {
     background-color: #FFFADD;
 }
 
-.img-thumbnail {
-  width: 500px;
-  height: 400px;
-}
-
 .card-header {
   background-color: #92C24C;
   font-size: 20px;
