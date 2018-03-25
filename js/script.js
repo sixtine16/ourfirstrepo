@@ -1,24 +1,28 @@
 getStylesheet();
 
 function getStylesheet() {
-      var currentTime = new Date().getHours();
-      // var currentTime = 1;
+      // var currentTime = new Date().getHours();
+      var currentTime = 7;
       console.log("time in hours: " + currentTime)
 
       if ((0 <= currentTime) && (currentTime < 4)) {
         $('#hangoverSnack').show();
+        $('#hangoverSnack-button').show();
         console.log("hangover time")
 
       } else if ((4 <= currentTime) && (currentTime < 12)) {
         $('#breakfast').show();
+        $('#breakfast-button').show();
         console.log("breakfast time")
 
       } else if (( 12 <= currentTime) && (currentTime < 17)) {
         $('#lunch').show();
+        $('#lunch-button').show();
         console.log("lunch time")
 
       } else {
         $('#dinner').show();
+        $('#dinner-button').show();
         console.log("dinner time")
       }
 }

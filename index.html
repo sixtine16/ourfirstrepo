@@ -23,7 +23,7 @@
       <a class="navbar-brand"><h1>MEAL O'CLOCK</h1></a>
       <form class="form-inline">
         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> <!-- to code in JS -->
+        <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button> <!-- to code in JS -->
       </form>
     </nav>
 <!-- NAVIGATION BAR END -->
@@ -33,7 +33,12 @@
       <h2>Seven-cup muesli</h2>
       <div class="row">
         <div class="col-sm-5">
-          <img src="images/breakfast_muesli.jpg" class="img-fluid" alt="Responsive image">
+          <img src="images/breakfast_muesli.jpg" class="img-thumbnail" class="img-fluid" alt="Responsive image">
+          <div class="PreparationBar">
+            <p>Preparation: 10 min Serving: 10</p>
+            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&layout=button_count&size=small&mobile_iframe=true&width=88&height=20&appId" width="88" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+          </div>
         </div>
 
         <div class="col-sm-3">
@@ -58,7 +63,6 @@
         </div>
 
         <div class="col-sm-3">
-        </br>
           <div class="card bg-success">
           <div class="card-header">
             Method
@@ -82,6 +86,8 @@
         <img src="images/lunch-salad.jpeg" class="img-thumbnail" class="img-fluid" alt="Responsive image">
         <div class="PreparationBar">
           <p>Preparation: 15 min Cooking: 1-2 min</p>
+          <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&layout=button_count&size=small&mobile_iframe=true&width=88&height=20&appId" width="88" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
         </div>
       </div>
 <!-- Ingredients table -->
@@ -124,9 +130,6 @@
       </div>
 <!-- End Method Table -->
     </div>
-    <div class="row">
-      <div>Insert plugin to share on FB or other</div>
-    </div>
   </div>
   <!-- END LUNCH -->
 
@@ -136,7 +139,12 @@
       <div class="row">
         <div class="col-sm-5">
           <p class="text-center"> </p>
-          <img src="images/dinner.jpg" class="img-fluid" alt="Responsive image">
+          <img src="images/dinner.jpg" class="img-thumbnail" class="img-fluid" alt="Responsive image">
+          <div class="PreparationBar">
+            <p>Preparation: 20 min Serving: 4</p>
+            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&layout=button_count&size=small&mobile_iframe=true&width=88&height=20&appId" width="88" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+          </div>
         </div>
 
         <div class="col-sm-3">
@@ -161,7 +169,6 @@
         </div>
 
         <div class="col-sm-3">
-        </br>
           <div class="card bg-success">
           <div class="card-header">
             Method
@@ -185,7 +192,12 @@
         <div class="row">
           <div class="col-sm-5">
             <p class="text-center"> </p>
-            <img src="images/hangover.jpg" class="img-fluid" alt="Responsive image">
+            <img src="images/hangover.jpg" class="img-thumbnail" class="img-fluid" alt="Responsive image">
+            <div class="PreparationBar">
+              <p>Preparation: 30 min Serving: 2-5</p>
+              <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&layout=button_count&size=small&mobile_iframe=true&width=88&height=20&appId" width="88" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+            </div>
           </div>
 
           <div class="col-sm-3">
@@ -227,14 +239,54 @@
       <!-- END HANGOVERSNACK -->
 
 <!-- OTHER RECIPIES -->
-    <div class="container button-recipe">
+    <div id="breakfast-button" class="hidden container button-recipe">
       <div clas="row">
         <div class="col-12 text-center">
-          <button type="button" id="button1" class="btn btn-success btn-lg" aria-pressed="true">Recipe 1</button>
-          <button type="button" id="button2" class="btn btn-success btn-lg" aria-pressed="true">Recipe 2</button>
-          <button type="button" id="button3"class="btn btn-success btn-lg" aria-pressed="true">Recipe 3</button>
-          <button type="button" id="button4" class="btn btn-success btn-lg" aria-pressed="true">Recipe 4</button>
-          <button type="button" id="button5" class="btn btn-success btn-lg" aria-pressed="true">Recipe 5</button>
+          <button type="button" id="button1" class="btn btn-success btn-lg recipe-button" aria-pressed="true">Slow cooker Turkish breakfast eggs</button>
+          <button type="button" id="button2" class="btn btn-success btn-lg recipe-button" aria-pressed="true">Mexican beans & avocado on toast</button>
+          <button type="button" id="button3"class="btn btn-success btn-lg recipe-button" aria-pressed="true">Cardamom & peach quinoa porridge</button>
+          <button type="button" id="button4" class="btn btn-success btn-lg recipe-button" aria-pressed="true">Berry omelette</button>
+          <button type="button" id="button5" class="btn btn-success btn-lg recipe-button" aria-pressed="true">Baked salmon & eggs</button>
+          <button type="button" id="button6" class="btn btn-success btn-lg recipe-button" aria-pressed="true">more recipes</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="lunch-button" class="hidden container button-recipe">
+      <div clas="row">
+        <div class="col-12 text-center">
+          <button type="button" id="button1" class="btn btn-success btn-lg recipe-button" aria-pressed="true">Fresh salmon with Thai noodle salad</button>
+          <button type="button" id="button2" class="btn btn-success btn-lg recipe-button" aria-pressed="true">Garlicky mushroom penne</button>
+          <button type="button" id="button3"class="btn btn-success btn-lg recipe-button" aria-pressed="true">Quinoa tabbouleh</button>
+          <button type="button" id="button4" class="btn btn-success btn-lg recipe-button" aria-pressed="true">Egg & rocket pizzas</button>
+          <button type="button" id="button5" class="btn btn-success btn-lg recipe-button" aria-pressed="true">Red lentil & carrot soup</button>
+          <button type="button" id="button6" class="btn btn-success btn-lg recipe-button" aria-pressed="true">...more recipes</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="dinner-button" class="hidden container button-recipe">
+      <div clas="row">
+        <div class="col-12 text-center">
+          <button type="button" id="button1" class="btn btn-success btn-lg recipe-button" aria-pressed="true">Spanish chicken stew</button>
+          <button type="button" id="button2" class="btn btn-success btn-lg recipe-button" aria-pressed="true">Chicken & chorizo jambalaya</button>
+          <button type="button" id="button3"class="btn btn-success btn-lg recipe-button" aria-pressed="true">Summer vegetable curry</button>
+          <button type="button" id="button4" class="btn btn-success btn-lg recipe-button" aria-pressed="true">Vegan shepherd's pie</button>
+          <button type="button" id="button5" class="btn btn-success btn-lg recipe-button" aria-pressed="true">Pesto-crusted cod with Puy lentils</button>
+          <button type="button" id="button6" class="btn btn-success btn-lg recipe-button" aria-pressed="true">...more recipes</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="hangoverSnack-button" class="hidden container button-recipe">
+      <div clas="row">
+        <div class="col-12 text-center">
+          <button type="button" id="button1" class="btn btn-success btn-lg recipe-button" aria-pressed="true">Cauliflower & squash fritters with mint & feta dip</button>
+          <button type="button" id="button2" class="btn btn-success btn-lg recipe-button" aria-pressed="true">Nutty chicken satay strips</button>
+          <button type="button" id="button3"class="btn btn-success btn-lg recipe-button" aria-pressed="true">Pitta pocket</button>
+          <button type="button" id="button4" class="btn btn-success btn-lg recipe-button" aria-pressed="true">Mini chicken fajitas</button>
+          <button type="button" id="button5" class="btn btn-success btn-lg recipe-button" aria-pressed="true">Chickpea & red pepper dip</button>
+          <button type="button" id="button6" class="btn btn-success btn-lg recipe-button" aria-pressed="true">more recipes</button>
         </div>
       </div>
     </div>
@@ -246,17 +298,17 @@
             <div class="row py-3 footer">
 
                 <!--Grid column-->
-                  <div class="col-6 text-left">
+                  <div class="col-sm-6 text-left">
                     <p class="footer-green"><h4>Get connected with us on social networks!</h4></p>
                 </div>
                 <!--Grid column-->
 
                 <!--Grid column-->
-                  <div class="col-6 text-right social-media">
-                  <img src="images/fb.png" alt="Facebook">
-                  <img src="images/insta.png" alt="Instagram">
-                  <img src="images/twitter.png" alt="Twitter">
-                  <img src="images/pinterest.png" alt="Pinterest">
+                  <div class="col-sm-6 text-right social-media">
+                  <a href="https://www.facebook.com"><img src="images/fb.png" alt="Facebook">
+                  <a href="https://www.instagram.com"><img src="images/insta.png" alt="Instagram">
+                  <a href="https://www.twitter.com"><img src="images/twitter.png" alt="Twitter">
+                  <a href="https://www.pineterst.com"><img src="images/pinterest.png" alt="Pinterest">
                 <!--Grid column-->
 
             </div>
@@ -266,7 +318,7 @@
     <!--Footer content-->
     <div class="container">
       <div class="row footer-content">
-        <div class="col-6">
+        <div class="col-sm-6">
           <h6 class="text-uppercase font-weight-bold">
             <strong>Useful links</strong>
           </h6>
@@ -283,7 +335,7 @@
           <a href="tc.html" class="dark-grey-text">Terms and Conditions</a>
       </p>
     </div>
-    <div class="col-6">
+    <div class="col-sm-6">
       <section class="home-newsletter">
         <h6 class="text-uppercase font-weight-bold">
         <strong>Subscribe to our Newsletter</strong>
@@ -303,8 +355,7 @@
 
     <!-- Copyright-->
     <div class="footer-copyright py-2 text-center">
-        &copy; 2018 Copyright:
-            <strong> Thuy & Claudia</strong>
+        &copy; <strong> 2018 Copyright: Thuy & Claudia</strong>
     </div>
     <!-- End Copyright -->
     </div>
