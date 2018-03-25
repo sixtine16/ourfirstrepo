@@ -20,7 +20,7 @@
   <body>
 <!-- NAVIGATION BAR to be styled -->
     <nav class="navbar navbar-light justify-content-between">
-      <a class="navbar-brand">RECIPES SITE</a>
+      <a class="navbar-brand"><h1>RECIPES SITE</h1></a>
       <form class="form-inline">
         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> <!-- to code in JS -->
@@ -33,7 +33,6 @@
       <h2>Seven-cup muesli</h2>
       <div class="row">
         <div class="col-sm-5">
-          <p class="text-center"> </p>
           <img src="images/breakfast_muesli.jpg" class="img-fluid" alt="Responsive image">
         </div>
 
@@ -80,33 +79,36 @@
     <h2>Beetroot & halloumi salad with pomegranate & dill</h2>
     <div class="row">
       <div class="col-sm-5">
-        <img src="images/lunch-salad.jpeg" class="img-fluid" alt="Responsive image">
+        <img src="images/lunch-salad.jpeg" class="img-thumbnail" class="img-fluid" alt="Responsive image">
+        <div class="PreparationBar">
+          <p>Preparation: 15 min Cooking: 1-2 min</p>
+        </div>
       </div>
-
+<!-- Ingredients table -->
       <div class="col-sm-3">
         <div class="card bg-success">
         <div class="card-header">
           Ingredients
         </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">
-            <p class="small">2 tbsp apple cider vinegar</p>
-            <p class="small">2 oranges</p>
-            <p class="small">4 handfuls rocket leaves</p>
-            <p class="small">2 cooked beetroots, chopped</p>
-            <p class="small">drop rapeseed oil, for frying</p>
-            <p class="small">80g thinly sliced halloumi, slices halved</p>
-            <p class="small">80g pomegranate seeds</p>
-            <p class="small">2 tbsp pumpkin seeds</p>
-            <p class="small">handful mint leaves</p>
-            <p class="small">few sprigs dill, chopped</p>
-          </li>
-        </ul>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <p class="small">2 tbsp apple cider vinegar</p>
+              <p class="small">2 oranges</p>
+              <p class="small">4 handfuls rocket leaves</p>
+              <p class="small">2 cooked beetroots, chopped</p>
+              <p class="small">drop rapeseed oil, for frying</p>
+              <p class="small">80g thinly sliced halloumi, slices halved</p>
+              <p class="small">80g pomegranate seeds</p>
+              <p class="small">2 tbsp pumpkin seeds</p>
+              <p class="small">handful mint leaves</p>
+              <p class="small">few sprigs dill, chopped</p>
+            </li>
+          </ul>
+        </div>
       </div>
-      </div>
-
+<!-- End Ingredients Table -->
+<!-- Method Table -->
       <div class="col-sm-3">
-      </br>
         <div class="card bg-success">
         <div class="card-header">
           Method
@@ -120,7 +122,10 @@
         </ul>
       </div>
       </div>
-
+<!-- End Method Table -->
+    </div>
+    <div class="row">
+      <div>Insert plugin to share on FB or other</div>
     </div>
   </div>
   <!-- END LUNCH -->
@@ -175,7 +180,7 @@
     <!-- END DINNER -->
 
     <!-- HANGOVERSNACK -->
-      <div id="hangoverSnack" class=" container card recipe-card">
+      <div id="hangoverSnack" class="hidden container card recipe-card">
         <h2>Baked sweet potato fries</h2>
         <div class="row">
           <div class="col-sm-5">
@@ -242,7 +247,7 @@
 
                 <!--Grid column-->
                   <div class="col-6 text-left">
-                    <h5><p class="footer-green"><strong>Get connected with us on social networks!</strong></p></h5>
+                    <p class="footer-green"><h4>Get connected with us on social networks!</h4></p>
                 </div>
                 <!--Grid column-->
 
