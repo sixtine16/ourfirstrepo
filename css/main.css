@@ -46,11 +46,6 @@ a:active {
     color: black;
 }
 
-
-.hidden {
-  display: none;
-}
-
 .navbar {
   background-color: #92C24C;
   color: #44813E;
@@ -79,6 +74,9 @@ a:active {
   margin-bottom: 30px;
 }
 
+.hidden {
+  display: none;
+}
 
 .footer {
   background-color: #44813E;
