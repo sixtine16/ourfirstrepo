@@ -66,6 +66,10 @@ a:active {
   font-weight: bolder;
 }
 
+.list-group {
+  border: 2.5px dotted #FCD949;
+}
+
 .col-lg-3 {
   margin-bottom: 10px;
 }
@@ -92,6 +96,11 @@ a:active {
 
 .footer-green {
   padding-left: 18px;
+}
+
+.row {
+  margin-right: 0px;
+  padding-left: 15px;
 }
 
 .social-media {
