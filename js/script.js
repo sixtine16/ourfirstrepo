@@ -15,7 +15,7 @@ function getStylesheet() {
         $('#breakfast-button').show();
         console.log("breakfast time")
 
-      } else if (( 12 <= currentTime) && (currentTime < 17)) {
+      } else if (( 12 <= currentTime) && (currentTime < 19)) {
         $('#lunch').show();
         $('#lunch-button').show();
         console.log("lunch time")
