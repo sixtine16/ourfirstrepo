@@ -18,10 +18,6 @@ h2 {
   color: #44813E;
 }
 
-h3 {
-
-}
-
 h4 {
   color: white;
 }
@@ -111,7 +107,6 @@ a:active {
   margin-bottom: 10px;
 }
 
-.small-icon {
-  padding-left: 7px;
-  padding-right: 7px;
+.img-thumbnail {
+  margin-right: 20px;
 }
